@@ -1,0 +1,67 @@
+{
+  "name": "storywriter",
+  "productName": "Storywriter",
+  "version": "0.1.0",
+  "description": "A feature-rich editor for composing all kinds of stories!",
+  "main": ".webpack/main",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "eslint src/ --ext .ts,.js,.tsx,.jsx,.vue"
+  },
+  "keywords": [
+    "story",
+    "books",
+    "fanfiction",
+    "writing",
+    "characters"
+  ],
+  "author": {
+    "name": "Thalissa",
+    "url": "https://github.com/thalissa"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thalissa/storywriter"
+  },
+  "license": "CC BY-NC-SA 4.0",
+  "config": {
+    "forge": "./tools/forge/forge.config.js"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "6.0.0-beta.61",
+    "@electron-forge/maker-deb": "6.0.0-beta.61",
+    "@electron-forge/maker-rpm": "6.0.0-beta.61",
+    "@electron-forge/maker-squirrel": "6.0.0-beta.61",
+    "@electron-forge/maker-zip": "6.0.0-beta.61",
+    "@electron-forge/plugin-webpack": "6.0.0-beta.61",
+    "@marshallofsound/webpack-asset-relocator-loader": "^0.5.0",
+    "@types/node": "^16.9.6",
+    "@types/webpack-env": "^1.16.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.3.0",
+    "electron": "^15.0.0",
+    "eslint": "^7.32.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-vue": "^7.18.0",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.3.3",
+    "less": "^4.1.1",
+    "less-loader": "10.0.1",
+    "node-loader": "^2.0.0",
+    "style-loader": "^3.3.0",
+    "ts-loader": "9.2.6",
+    "typescript": "^4.4.3",
+    "vue-loader": "^16.8.1",
+    "webpack": "^5.53.0"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.0",
+    "vue": "^3.2.16"
+  }
+}
